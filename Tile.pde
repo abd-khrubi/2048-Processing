@@ -76,9 +76,9 @@ class Tile {
       int x = this.x * tileWidth;
       int y = this.y * tileHeight;
 
-      Color color = this.getColor();
+      Color col = this.getColor();
       rectMode(CENTER);
-      fill(color.getRed(), color.getGreen(), color.getBlue());
+      fill(col.getRed(), col.getGreen(), col.getBlue());
       stroke(0);
       strokeWeight(2);
       rect(x + tileWidth / 2, y + tileHeight / 2, tileWidth, tileHeight, 7);
